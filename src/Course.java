@@ -1,7 +1,7 @@
 public class Course {
-    private String courseId;
-    private String title;
-    private int unit;
+    public String courseId;
+    public String title;
+    public int unit;
 
     public Course(String courseId, String title, int unit) {
         this.courseId = courseId;
