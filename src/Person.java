@@ -1,6 +1,6 @@
 public class Person {
-    public String name;
-    public String id;
+    protected String name;
+    protected String id;
 
     public Person(String name, String id) {
         this.name = name;
