@@ -37,5 +37,6 @@ public class Main {
         Menu menu = new Menu();
         menu.first();
         menu.first();
+
     }
 }
