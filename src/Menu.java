@@ -9,7 +9,7 @@ public class Menu {
             System.out.println("Main Menu");
             System.out.println("1. Admin");
             System.out.println("2. Student");
-            System.out.println("3. staff");
+            System.out.println("3. Person");
             System.out.println("0. Exit");
             System.out.print("Choose: ");
 
@@ -23,7 +23,7 @@ public class Menu {
                     studentMenu();
                     break;
                 case "3":
-                    staffMenu();
+                    personMenu();
                     break;
                 case "0":
                     System.out.println("!!End!!");
@@ -55,31 +55,31 @@ public class Menu {
     private void adminMenu() {
         while (true) {
             System.out.println("<Admin Menu>");
-            System.out.println("1. Add staff");
+            System.out.println("1. Add Person");
             System.out.println("0. Back to Main Menu");
             System.out.print("Choose: ");
             String choice = sc.nextLine();
 
             switch (choice) {
                 case "1":
-                    System.out.print("staff Name: ");
+                    System.out.print("Person Name: ");
                     String name = sc.nextLine();
-                    System.out.print("staff ID: ");
+                    System.out.print("Person ID: ");
                     String id = sc.nextLine();
-                    System.out.print("staff email: ");
+                    System.out.print("Person email: ");
                     String email = sc.nextLine();
-                    System.out.print("staff nationalId: ");
+                    System.out.print("Person nationalId: ");
                     String nationalId = sc.nextLine();
-                    System.out.print("staff phoneNumber: ");
+                    System.out.print("Person phoneNumber: ");
                     String phoneNumber = sc.nextLine();
-                    System.out.print("staff birthDayt: ");
+                    System.out.print("Person birthDayt: ");
                     String birthDayt = sc.nextLine();
 
-                    Staff s = new Staff(name, id, email, nationalId, phoneNumber, birthDayt);
-                    System.out.println("***staff added***:");
-                    s.showInfo();
-                    FileManager.saveStaff(s);
-                    System.out.println("***staff saved to person.txt***");
+                    Person p = new Person(name, id, email, nationalId, phoneNumber, birthDayt);
+                    System.out.println("***Person added***:");
+                    p.showInfo();
+                    FileManager.savePerson(p);
+                    System.out.println("***Person saved to person.txt***");
                     break;
                 case "0":
                     return; // برگشت به منوی اصلی
@@ -128,56 +128,35 @@ public class Menu {
         }
     }
 
-    public void staffMenu() {
+    public void personMenu() {
         while (true) {
-            System.out.println("<staff Menu>");
-            System.out.println("1. Add professor");
-            System.out.println("2. Add student");
+            System.out.println("<Person Menu>");
+            System.out.println("1. Add Person");
             System.out.println("0. Back to Main Menu");
             System.out.print("Choose: ");
             String choice = sc.nextLine();
 
             switch (choice) {
                 case "1":
-                    System.out.print("professor Name: ");
+                    System.out.print("Person Name: ");
                     String name = sc.nextLine();
-                    System.out.print("professor ID: ");
+                    System.out.print("Person ID: ");
                     String id = sc.nextLine();
-                    System.out.print("professor email: ");
+                    System.out.print("Person email: ");
                     String email = sc.nextLine();
-                    System.out.print("professor nationalId: ");
+                    System.out.print("Person nationalId: ");
                     String nationalId = sc.nextLine();
-                    System.out.print("professor phoneNumber: ");
+                    System.out.print("Person phoneNumber: ");
                     String phoneNumber = sc.nextLine();
-                    System.out.println("professor birthDayt: ");
+                    System.out.println("Person birthDayt: ");
                     String birthDayt = sc.nextLine();
 
-                    Professor p = new Professor(name, id, email, nationalId, phoneNumber, birthDayt);
-                    System.out.println("professor added:");
+                    Person p = new Person(name, id, email, nationalId, phoneNumber, birthDayt);
+                    System.out.println("Person added:");
                     p.showInfo();
-                    FileManager.saveProfessor(p);
-                    System.out.println("professor saved to professor.txt");
+                    FileManager.savePerson(p);
+                    System.out.println("Person saved to person.txt");
                     break;
-                case "2":
-                    System.out.print("student Name: ");
-                    String nam = sc.nextLine();
-                    System.out.print("student ID: ");
-                    String Id = sc.nextLine();
-                    System.out.print("student email: ");
-                    String Email = sc.nextLine();
-                    System.out.print("student nationalId: ");
-                    String NationalId = sc.nextLine();
-                    System.out.print("student phoneNumber: ");
-                    String PhoneNumber = sc.nextLine();
-                    System.out.println("student birthDayt: ");
-                    String BirthDayt = sc.nextLine();
-
-                    Student s = new Student(nam, Id, Email, NationalId, PhoneNumber, BirthDayt);
-                    System.out.println("student added:");
-                    s.showInfo();
-                    FileManager.saveStudent(s);
-                    System.out.println("student saved to student.txt");
-
                 case "0":
                     return;
                 default:
