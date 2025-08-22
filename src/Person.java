@@ -17,6 +17,6 @@ public class Person {
 
     public void showInfo() {
 
-        System.out.println("Nam7e: " + name + ", ID1: " + id);
+        System.out.println("Name: " + name + ", ID: " + id);
     }
 }
