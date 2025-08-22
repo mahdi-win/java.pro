@@ -110,7 +110,7 @@ public class Menu {
                     String nationalId = sc.nextLine();
                     System.out.print("Student phoneNumber: ");
                     String phoneNumber = sc.nextLine();
-                    System.out.println("Student brithDayte: ");
+                    System.out.print("Student brithDayte: ");
                     String brithDayte = sc.nextLine();
 
                     Student s = new Student(name, id, email, nationalId, phoneNumber, brithDayte );
@@ -148,7 +148,7 @@ public class Menu {
                     String nationalId = sc.nextLine();
                     System.out.print("Person phoneNumber: ");
                     String phoneNumber = sc.nextLine();
-                    System.out.println("Person birthDayt: ");
+                    System.out.print("Person birthDayt: ");
                     String birthDayt = sc.nextLine();
 
                     Person p = new Person(name, id, email, nationalId, phoneNumber, birthDayt);
