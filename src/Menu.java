@@ -66,8 +66,16 @@ public class Menu {
                     String name = sc.nextLine();
                     System.out.print("Person ID: ");
                     String id = sc.nextLine();
+                    System.out.println("Person email: ");
+                    String email = sc.nextLine();
+                    System.out.println("Person nationalId: ");
+                    String nationalId = sc.nextLine();
+                    System.out.println("Person phoneNumber: ");
+                    String phoneNumber = sc.nextLine();
+                    System.out.println("Person birthDayt: ");
+                    String birthDayt = sc.nextLine();
 
-                    Person p = new Person(name, id);
+                    Person p = new Person(name, id, email, nationalId, phoneNumber, birthDayt);
                     System.out.println("***Person added***:");
                     p.showInfo();
                     FileManager.savePerson(p);
@@ -96,8 +104,16 @@ public class Menu {
                     String name = sc.nextLine();
                     System.out.print("Student ID: ");
                     String id = sc.nextLine();
+                    System.out.print("Student email: ");
+                    String email = sc.nextLine();
+                    System.out.print("Student nationalId: ");
+                    String nationalId = sc.nextLine();
+                    System.out.print("Student phoneNumber: ");
+                    String phoneNumber = sc.nextLine();
+                    System.out.print("Student brithDayte: ");
+                    String brithDayte = sc.nextLine();
 
-                    Student s = new Student(name, id);
+                    Student s = new Student(name, id, email, nationalId, phoneNumber, brithDayte );
                     System.out.println("*** Student added ***");
                     s.showInfo();
                     FileManager.saveStudent(s);
@@ -126,8 +142,16 @@ public class Menu {
                     String name = sc.nextLine();
                     System.out.print("Person ID: ");
                     String id = sc.nextLine();
+                    System.out.print("Person email: ");
+                    String email = sc.nextLine();
+                    System.out.print("Person nationalId: ");
+                    String nationalId = sc.nextLine();
+                    System.out.print("Person phoneNumber: ");
+                    String phoneNumber = sc.nextLine();
+                    System.out.print("Person birthDayt: ");
+                    String birthDayt = sc.nextLine();
 
-                    Person p = new Person(name, id);
+                    Person p = new Person(name, id, email, nationalId, phoneNumber, birthDayt);
                     System.out.println("Person added:");
                     p.showInfo();
                     FileManager.savePerson(p);
