@@ -66,13 +66,13 @@ public class Menu {
                     String name = sc.nextLine();
                     System.out.print("Person ID: ");
                     String id = sc.nextLine();
-                    System.out.println("Person email: ");
+                    System.out.print("Person email: ");
                     String email = sc.nextLine();
-                    System.out.println("Person nationalId: ");
+                    System.out.print("Person nationalId: ");
                     String nationalId = sc.nextLine();
-                    System.out.println("Person phoneNumber: ");
+                    System.out.print("Person phoneNumber: ");
                     String phoneNumber = sc.nextLine();
-                    System.out.println("Person birthDayt: ");
+                    System.out.print("Person birthDayt: ");
                     String birthDayt = sc.nextLine();
 
                     Person p = new Person(name, id, email, nationalId, phoneNumber, birthDayt);
@@ -104,11 +104,11 @@ public class Menu {
                     String name = sc.nextLine();
                     System.out.print("Student ID: ");
                     String id = sc.nextLine();
-                    System.out.println("Student email: ");
+                    System.out.print("Student email: ");
                     String email = sc.nextLine();
-                    System.out.println("Student nationalId: ");
+                    System.out.print("Student nationalId: ");
                     String nationalId = sc.nextLine();
-                    System.out.println("Student phoneNumber: ");
+                    System.out.print("Student phoneNumber: ");
                     String phoneNumber = sc.nextLine();
                     System.out.println("Student brithDayte: ");
                     String brithDayte = sc.nextLine();
@@ -142,11 +142,11 @@ public class Menu {
                     String name = sc.nextLine();
                     System.out.print("Person ID: ");
                     String id = sc.nextLine();
-                    System.out.println("Person email: ");
+                    System.out.print("Person email: ");
                     String email = sc.nextLine();
-                    System.out.println("Person nationalId: ");
+                    System.out.print("Person nationalId: ");
                     String nationalId = sc.nextLine();
-                    System.out.println("Person phoneNumber: ");
+                    System.out.print("Person phoneNumber: ");
                     String phoneNumber = sc.nextLine();
                     System.out.println("Person birthDayt: ");
                     String birthDayt = sc.nextLine();
