@@ -36,6 +36,7 @@ public class Main {
         st2.showCourses();
         Menu menu = new Menu();
         menu.first();
+        System.out.println("salam");
         menu.first();
 
     }
