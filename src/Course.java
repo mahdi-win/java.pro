@@ -10,6 +10,7 @@ public class Course {
     }
 
     public String getTitle() {
+
         return title;
     }
 }

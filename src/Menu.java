@@ -68,10 +68,10 @@ public class Menu {
                     String id = sc.nextLine();
 
                     Person p = new Person(name, id);
-                    System.out.println("Person added:");
+                    System.out.println("***Person added***:");
                     p.showInfo();
                     FileManager.savePerson(p);
-                    System.out.println("Person saved to person.txt");
+                    System.out.println("***Person saved to person.txt***");
                     break;
                 case "0":
                     return; // برگشت به منوی اصلی
@@ -98,7 +98,7 @@ public class Menu {
                     String id = sc.nextLine();
 
                     Student s = new Student(name, id);
-                    System.out.println("Student added:");
+                    System.out.println("*** Student added ***");
                     s.showInfo();
                     FileManager.saveStudent(s);
                     System.out.println("Student saved to student.txt");
