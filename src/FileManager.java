@@ -1,4 +1,3 @@
-
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -36,7 +35,7 @@ public class FileManager {
         }
     }
 
-    // ✅ لیست دانش‌آموزان
+    // لیست دانش‌آموزان
     public static void listStudent() {
         try {
             FileReader fr = new FileReader("student.txt");
@@ -64,7 +63,6 @@ public class FileManager {
         }
     }
 
-    // ✅ لیست استادها
     public static void listProfessor() {
         try {
             FileReader fr = new FileReader("professor.txt");
@@ -92,7 +90,7 @@ public class FileManager {
         }
     }
 
-    // ✅ لیست کارمندها
+    //  لیست کارمندها
     public static void listStaff() {
         try {
             FileReader fr = new FileReader("staff.txt");
@@ -131,7 +129,7 @@ public class FileManager {
         }
     }
 
-    // ✅ متد نمایش لیست دروس (مبتدی با Scanner)
+    //  متد نمایش لیست دروس (مبتدی با Scanner)
     public static void listCourse() {
         try {
             FileReader fr = new FileReader("course.txt");
@@ -154,4 +152,37 @@ public class FileManager {
             System.out.println("No courses found or error reading file.");
         }
     }
+    public static void searchStudent(String studentId) {
+        try {
+            FileReader fr = new FileReader("student.txt");
+            Scanner sc = new Scanner(fr);
+
+            boolean found = false;
+            while (sc.hasNextLine()) {
+                String line = sc.nextLine();
+                String[] data = line.split(",");
+                if (data.length == 6 && data[1].equals(studentId)) {
+                    System.out.println("Student found:");
+                    System.out.println("Name: " + data[0] +
+                            ", ID: " + data[1] +
+                            ", Email: " + data[2] +
+                            ", National ID: " + data[3] +
+                            ", Phone: " + data[4] +
+                            ", BirthDate: " + data[5]);
+                    found = true;
+                    break;
+                }
+            }
+
+            if (!found) {
+                System.out.println("No student found with ID: " + studentId);
+            }
+
+            sc.close();
+            fr.close();
+        } catch (IOException e) {
+            System.out.println("Error reading student file.");
+        }
+    }
+
 }
