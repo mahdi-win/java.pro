@@ -4,6 +4,11 @@ public class Main {
         Professor p1 = new Professor("Ahmad","121214","Hadizadeh","012254587","0919","1385");
         Student S1 = new Student("MOMO","403987676","Mohammad@gmail.com","0223568555","09323","1385");
         Student S2 = new Student("Mahdi","403987676","Mohammad@gmail.com","0223568555","09323","1385");
+        FileManager.saveStudent(S1);
+        FileManager.saveStudent(S2);
+        FileManager.saveProfessor(p1);
+
+
 
 
 
