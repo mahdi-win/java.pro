@@ -14,7 +14,7 @@ public class Student extends Person {
     }
     public void addSecondaryMajor(Major major) {//جدید
         secondaryMajors.add(major);
-    }
+    }//new
 
     public void addCourse(Course course) {
 
