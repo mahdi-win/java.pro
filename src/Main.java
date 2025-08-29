@@ -6,7 +6,7 @@ public class Main {
         Student S2 = new Student("Mahdi","403987676","Mohammad@gmail.com","0223568555","09323","1385");
         FileManager.saveStudent(S1);
         FileManager.saveStudent(S2);
-        FileManager.saveProfessor(p1);
+        FileManager.saveStudent(S1);
 
 
 
