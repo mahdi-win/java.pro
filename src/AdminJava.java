@@ -363,5 +363,7 @@ public class AdminJava extends Application {
         public String getUnit(){ return unit; }
     }
 
-    public static void main(String[] args) { launch(args); }
+    public static void main(String[] args) { 
+        launch(args);
+    }
 }
