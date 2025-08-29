@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
-
+//test
 public class Major {
     private String name;
     private Department department;
