@@ -12,7 +12,7 @@ public class Student extends Person {
 
         this.courses = new ArrayList<>();
     }
-    public void addSecondaryMajor(Major major) {
+    public void addSecondaryMajor(Major major) {//جدید
         secondaryMajors.add(major);
     }
 
