@@ -2,6 +2,11 @@ import java.util.ArrayList;
 
 public class Professor extends Person {
     private ArrayList<Course> courses = new ArrayList<>();
+
+    public String getDepartment() {
+        return department;
+    }
+
     private String department;
 
     public Professor(String name, String id, String email, String nationalId, String phoneNumber, String birthDate, String department) {

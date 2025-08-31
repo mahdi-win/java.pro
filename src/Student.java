@@ -3,8 +3,18 @@ import java.util.List;
 
 public class Student extends Person {
     private ArrayList<Course> courses = new ArrayList<>();
+
+    public String getFaculty() {
+        return faculty;
+    }
+
     private String major;
     private String department;
+
+    public String getDepartment() {
+        return department;
+    }
+
     private String faculty;
     // رشته اصلی
     public Student(String name, String id, String email, String nationalId, String phoneNumber, String birthDate, String major, String department, String faculty) {
