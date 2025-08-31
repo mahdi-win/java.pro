@@ -53,8 +53,8 @@ public class FileManager {
                             ", National ID: " + data[3] +
                             ", Phone: " + data[4] +
                             ", BirthDate: " + data[5]+
-                            "Department: "+data[6] +
-                            "Faculty: " +data[7]);
+                            ", Department: "+data[6] +
+                            ", Faculty: " +data[7]);
                 }
             }
 
@@ -82,7 +82,7 @@ public class FileManager {
                             ", National ID: " + data[3] +
                             ", Phone: " + data[4] +
                             ", BirthDate: " + data[5]+
-                            "Department: "+data[6]);
+                            ", Department: "+data[6]);
                 }
             }
 
@@ -173,8 +173,8 @@ public class FileManager {
                             ", National ID: " + data[3] +
                             ", Phone: " + data[4] +
                             ", BirthDate: " + data[5]+
-                            "Department: "+data[6] +
-                            "Faculty: " +data[7]);
+                            ", Department: "+data[6] +
+                            ", Faculty: " +data[7]);
                     found = true;
                     break;
                 }
