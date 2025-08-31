@@ -3,18 +3,8 @@ import java.util.List;
 
 public class Student extends Person {
     private ArrayList<Course> courses = new ArrayList<>();
-
-    public String getFaculty() {
-        return faculty;
-    }
-
     private String major;
     private String department;
-
-    public String getDepartment() {
-        return department;
-    }
-
     private String faculty;
     // رشته اصلی
     public Student(String name, String id, String email, String nationalId, String phoneNumber, String birthDate, String major, String department, String faculty) {
@@ -30,6 +20,15 @@ public class Student extends Person {
     public void addCourse(Course course) {
 
         courses.add(course);
+    }
+    public String getFaculty() {
+        return faculty;
+    }
+    public String getDepartment() {
+        return department;
+    }
+    public String getMajor() {
+        return major;
     }
 
     public void showCourses() {
